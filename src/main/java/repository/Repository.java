@@ -1,4 +1,4 @@
-package main.java.repository;
+package repository;
 
 
 import java.io.BufferedReader;
@@ -10,8 +10,8 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-import main.java.model.Consultation;
-import main.java.model.Patient;
+import model.Consultation;
+import model.Patient;
 
 
 public class Repository {

@@ -1,19 +1,20 @@
-package main.java.controller;
+package controller;
 
 import static org.junit.Assert.*;
 
-import main.java.model.Consultation;
-import main.java.model.Patient;
-import main.java.repository.Repository;
-import main.java.exceptions.PatientException;
-import main.java.exceptions.ConsultationException;
+import model.Consultation;
+import model.Patient;
+import repository.Repository;
+import exceptions.PatientException;
+import exceptions.ConsultationException;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class DoctorControllerTest {
 
-    @org.junit.Test
+    @Test
     public void addPatient() {
         Patient p1 = new Patient("","123","");
         Patient p2 = new Patient("1960408205572","Nick","bla");

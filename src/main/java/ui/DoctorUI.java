@@ -1,14 +1,14 @@
-package main.java.ui;
+package ui;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import main.java.model.Consultation;
-import main.java.model.Patient;
-import main.java.controller.DoctorController;
-import main.java.exceptions.ConsultationException;
-import main.java.exceptions.PatientException;
+import model.Consultation;
+import model.Patient;
+import controller.DoctorController;
+import exceptions.ConsultationException;
+import exceptions.PatientException;
 
 public class DoctorUI {
 	public DoctorController ctrl;

@@ -1,8 +1,8 @@
 package DoctorMG;
 
-import main.java.repository.Repository;
-import main.java.ui.DoctorUI;
-import main.java.controller.DoctorController;
+import repository.Repository;
+import ui.DoctorUI;
+import controller.DoctorController;
 
 public class App {
 
