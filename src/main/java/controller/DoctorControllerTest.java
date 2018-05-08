@@ -70,9 +70,59 @@ public class DoctorControllerTest {
             System.out.println(e.getMessage());
         }
     }
-
+/*
     @org.junit.Test
     public void getPatientsWithDisease() {
+        List<String> t1 = new ArrayList<>();
+        t1.add("juj");
+        List<String> t2 = new ArrayList<>();
+        t2.add("crema");
+        List<String> t3 = new ArrayList<>();
+        t3.add("sirop");
+        String patients = "FilePatients.txt";
+        String consultations = "FileConsultations.txt";
+        Repository r = new Repository(patients,consultations);
+        DoctorController c = new DoctorController(r);
+        try {
+            c.addConsultation("20","2222222222222","acnee",t2,"08.08.2008");
+        }
+        catch (ConsultationException e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            Long result = (long)c.getPatientsWithDisease("tuse").size()+1;
+            c.addConsultation("22","2222222222222","tuse",t1,"09.02.2015");
+            System.out.println(result);
+            Long l = (long)c.getPatientsWithDisease("tuse").size();
+            assertEquals(result,l);
+
+        } catch (PatientException e) {
+            System.out.println(e.getMessage());
+        } catch (ConsultationException e) {
+            System.out.println(e.getMessage());
+        }
 
     }
+*/
+    @org.junit.Test
+    public void integrationFunc1() {
+        addPatient();
+    }
+
+    @org.junit.Test
+    public void integrationFunc2() {
+        addPatient();
+        addConsultation();
+    }
+
+    @org.junit.Test
+    public void integrationFunc3() {
+        addPatient();
+        addConsultation();
+//        getPatientsWithDisease();
+    }
+
+
+
+
 }
